@@ -4,6 +4,7 @@
 
 //Features:
 -> A simple but unique social media website where users can post anything they want like their life events, memories, upload images, etc.
+-> Clients can use this webapp as their own niche content app.
 -> A full-fledged CRUD (Create, Read, Update, Delete) app.
 -> Login (JWT) and Google OAuth Authentication.
 -> Pragination and Search, Comment on posts.
