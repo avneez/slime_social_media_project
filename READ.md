@@ -7,3 +7,6 @@
 -> A full-fledged CRUD (Create, Read, Update, Delete) app.
 -> Login (JWT) and Google OAuth Authentication.
 -> Pragination and Search, Comment on posts.
+
+![slimeAppDemo5](https://user-images.githubusercontent.com/61105948/166643425-6e039686-acb2-407f-844a-d25dd619d83f.png)
+![slimeAppDemo4](https://user-images.githubusercontent.com/61105948/166643587-dde7d2de-2667-47a5-9f78-68e0089a7198.png)
