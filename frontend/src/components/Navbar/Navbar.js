@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AppBar, Typography, Toolbar, Avatar, Button } from '@material-ui/core';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-// import decode from 'jwt-decode';
+import decode from 'jwt-decode';
 
 import useStyles from './styles'
 import slime from '../../images/slime.png'
@@ -24,7 +24,11 @@ const Navbar = () => {
     useEffect(() => {
         const token = user?.token;
 
-        //JWT...
+        if(token) {
+            const decodedToken = decode(token)
+
+            if(decodedToken.exp * 1000 < new Date().getTime()) logout();
+        }
 
         setUser(JSON.parse(localStorage.getItem('profile')));
     }, [location]);
