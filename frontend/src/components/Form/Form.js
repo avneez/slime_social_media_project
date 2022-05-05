@@ -29,8 +29,8 @@ const Form = ({ currentId, setCurrentId }) => {
         clear();
     }
 
-
-    const clear = () => {
+    const clear = (e) => {
+        e.preventDefault();
         setCurrentId(null)
         setPostData({ title: '', message: '', tags: '', selectedFile: '' })
     }
