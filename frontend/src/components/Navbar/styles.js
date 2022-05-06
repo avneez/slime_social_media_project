@@ -4,7 +4,7 @@ import { deepPurple } from '@material-ui/core/colors';
 export default makeStyles((theme) => ({
   appBar: {
     borderRadius: 15,
-    margin: '30px 0',
+    margin: '20px 0',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -40,4 +40,10 @@ export default makeStyles((theme) => ({
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
   },
+  button: {
+    display: "flex",
+    alignItems: 'center',
+    borderRadius: 25,
+    padding: '10px 10px'
+  }
 }));
